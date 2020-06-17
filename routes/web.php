@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 
-Route::post('/email', 'emailcontroller@email');
+oute::post('/email', 'emailcontroller@email');
