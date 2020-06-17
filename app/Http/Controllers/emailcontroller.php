@@ -12,7 +12,7 @@ class emailcontroller extends Controller
 //            'title'=> 'Preshy Jones Rocks',
             'body'=> $email['body'],
             'sub' => $email['subject'],
-        ]
+        ];
     
         \Mail::to($email['to'])->send(new\App\Mail\TestMail($details));
         echo "email has been sent";
