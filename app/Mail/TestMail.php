@@ -27,7 +27,7 @@ class TestMail extends Mailable
 
     public function build()
     {
-        return $this->subject($this->details['sub'])->markdown('emails/TestMail.blade.php');        
+        return $this->subject($this->details['sub'])->markdown('emails/TestMail');        
     }
     /**
      * Build the message.
