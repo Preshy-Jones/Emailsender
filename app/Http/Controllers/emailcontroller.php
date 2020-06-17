@@ -14,7 +14,7 @@ class emailcontroller extends Controller
             'sub' => $email['subject'],
         ];
         
-        \Mail::to($email['to'])->send(new\App\Mail\TestMail($details));
+        \Mail::to($email['to'])->send(new\App\Mail\Testmail($details));
         echo "email has been sent";
     }
 }
