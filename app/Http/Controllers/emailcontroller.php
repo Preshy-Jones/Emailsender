@@ -11,7 +11,7 @@ class emailcontroller extends Controller
         $details = [
 //            'title'=> 'Preshy Jones Rocks',
             'body'=> $email['body'],
-            'sub' => $emai['subject'],
+            'sub' => $email['subject'],
         ];
         
         \Mail::to($email['to'])->send(new\App\Mail\TestMail($details));
